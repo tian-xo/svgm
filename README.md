@@ -21,7 +21,7 @@ In more advanced scenarios, you might prefer to execute subtle optimizations, en
 <br>
 <br>
 
-![Demo](assets/demo.gif)
+![Demo](https://github.com/tian-xo/svgm/blob/main/assets/demo.gif)
 
 ## Why SVGM 🤔
 
