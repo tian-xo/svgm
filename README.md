@@ -1,65 +1,44 @@
-# minify-path README
+# SVGM
 
-This is the README for your extension "minify-path". After writing up a brief description, we recommend including the following sections.
+Lossless svg path minifier.
 
-## Features
+In more advanced scenarios, you might prefer to execute subtle optimizations, ensuring that the SVG path data remains intact without any alterations. And this is essentially what **SVGM** does.
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+## Feature 💭
 
-For example if there is an image subfolder under your extension project workspace:
+- Minify consecutive commands
+- Remove leading zeros in decimal digits ( 0.5xx → .5xx )
+- Always using space as a separator. ( All commas "," will be replaced with spaces " ")
+- Removing leading spaces if the next digit is negative. ( [0 -5] → [0-5] )
+- Always converting the first "m" command to a capital "M"
 
-\!\[feature X\]\(images/feature-x.png\)
+## Usage 📖
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+- Block / select the Path
+- [ Ctrl / Cmd ] + Shift + P
+- Find : svgm
+- Tap / Enter.
+<br>
+<br>
 
-## Requirements
+![Demo](assets/demo.gif)
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+## Why SVGM 🤔
 
-## Extension Settings
+If you're looking for a tool to optimize your raw SVG files, consider [SVGO](https://github.com/svg/svgo#other-ways-to-use-svgo).
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+99.9% of the time, [SVGO](https://github.com/svg/svgo#other-ways-to-use-svgo) already solves nearly all optimization issues related to SVG files.
 
-For example:
+In fact, SVGM also borrows path minification algorithm utilized by [SVGO](https://github.com/svg/svgo#other-ways-to-use-svgo).
 
-This extension contributes the following settings:
+However, there are cases where optimizing by "rewriting" svg paths **can increase entropy in our code**. This increased entropy can cause our source code to become larger when compressed using methods like gzip or brotli.
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+## When to use 🤔
 
-## Known Issues
+I will update a video, about it.
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+## Any Issues or Suggestions ?
 
-## Release Notes
+Please post at : https://github.com/tian-xo/svgm
 
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+Or hit me up on : https://discordapp.com/users/tian#1279

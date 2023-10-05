@@ -1,6 +1,6 @@
 {
-  "name": "minify-path",
-  "displayName": "minify path",
+  "name": "svgm",
+  "displayName": "svgm",
   "description": "lossless svg \"d\" path minifier",
   "version": "0.0.1",
   "engines": {
@@ -9,6 +9,10 @@
   "categories": [
     "Other"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tian-xo/svgm"
+  },
   "activationEvents": [],
   "main": "./extension.js",
   "files": [
