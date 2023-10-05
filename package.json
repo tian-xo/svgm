@@ -1,5 +1,6 @@
 {
   "name": "svgm",
+  "publisher": "tian-xo",
   "displayName": "svgm",
   "description": "lossless svg \"d\" path minifier",
   "version": "0.0.1",
@@ -12,6 +13,13 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/tian-xo/svgm"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/tian-xo/svgm",
+    "access": "public",
+    "repository": "https://github.com/tian-xo/svgm",
+    "type": "git",
+    "release": "https://github.com/tian-xo/svgm/releases/tag/0.0.1"
   },
   "activationEvents": [],
   "main": "./extension.js",
