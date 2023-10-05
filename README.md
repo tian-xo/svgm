@@ -25,20 +25,31 @@ In more advanced scenarios, you might prefer to execute subtle optimizations, en
 
 ## Why SVGM 🤔
 
-If you're looking for a tool to optimize your raw SVG files, consider [SVGO](https://github.com/svg/svgo#other-ways-to-use-svgo).
+><br>📢 If you're looking for a tool to optimize your raw SVG files, consider [SVGO](https://github.com/svg/svgo#other-ways-to-use-svgo).
+<br>
+<br>
 
 99.9% of the time, [SVGO](https://github.com/svg/svgo#other-ways-to-use-svgo) already solves nearly all optimization issues related to SVG files.
 
 In fact, SVGM also borrows path minification algorithm utilized by [SVGO](https://github.com/svg/svgo#other-ways-to-use-svgo).
 
-However, there are cases where optimizing by "rewriting" svg paths **can increase entropy in our code**. This increased entropy can cause our source code to become larger when compressed using methods like gzip or brotli.
+### However
 
-## When to use 🤔
+There are cases where optimizing by "rewriting" svg paths **can increase entropy in our code**. This increased entropy can cause our source code to become larger when compressed using methods like gzip or brotli.
+<br>
+<br>
 
-I will update a video, about it.
+#
 
-## Any Issues or Suggestions ?
+### So, when to use SVGM ?
 
-Please post at : https://github.com/tian-xo/svgm
+I will update a video, about it soon...
 
-Or hit me up on : https://discordapp.com/users/tian#1279
+#
+
+<br>
+
+For any issues and suggestions,
+
+- Post at : https://github.com/tian-xo/svgm
+- Hit me up on : https://discordapp.com/users/tian#1279
